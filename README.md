@@ -1,14 +1,6 @@
 # Star Wars Galaxies Steam Integration
-Star Wars Galaxies Steam Integration is a simple application in C# that launches your preferred SWG server launcher that hopefully auto-logins for authentication, then exits the launcher to launch the SWG client.
-
-Currently, this is configured for only Star Wars Galaxies Restoration, specifically the x64 version that is enabled in the user settings of the launcher. It is also only mean
-
-# For Other Star Wars Galaxies Servers
-If you have the .NET Visual Studio SDK installed (you can download this seperately instead of downloading Visual Studio), you can modify the code of the original included file `Star-Wars-Galaxies-Steam-Integration.cs` with a different `launcherPath` and `gamePath` to the path of your desire
-
-
-# Star Wars Galaxies Steam Integration
 Star Wars Galaxies Steam Integration is a simple wrapper application written in C# that automates the launch process for private SWG servers. It is designed to allow for seamless integration with Steam as a "Non-Steam Game," ensuring the Steam Overlay works correctly.
+
 This has been tested and is confirmed to currently only work with the Star Wars Galaxies Restoration server, specifically the x64 version that is enabled in the user settings of the launcher.
 
 # The Problem
