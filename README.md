@@ -61,8 +61,8 @@ https://www.virustotal.com/gui/file/3c0bf772b95c93363a0a14e5df78e4ec408c90f04cb7
 2.  Download the `SWGSI.zip` file from the latest release.
 3.  Your browser may flag the download as unsafe because it is a new application. **This is a false positive.**
     *   In Older Chrome Versions/Other Browsers: Go to the Downloads page and keep the file.
-    *   In Windows Part I: Given that Windows Defender catches it first, open the Start menu and type *Virus, to pull up Virus & Threat Protection
-    *   In Windows Part II: Click on Protection history and select the last Threat blocked. Click on Actions at the bottom right and recover the file.
+    *   In Windows Part I: Given that Windows Defender catches it first, open the Start menu and type **Virus** then press enter to launch **Virus & Threat Protection**
+    *   In Windows Part II: Click on **Protection history** and select the last **Threat blocked**. Click on **Actions** at the bottom right and recover the file.
 4.  Extract all the files from the `.zip` into their own folder.
 5.  Follow the configuration steps below.
 
