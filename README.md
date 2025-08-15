@@ -21,6 +21,18 @@ The application runs silently and apart from the command terminal that pops up t
 
 # How to Install and Use
 
+### ⚠️ Important Note on Security Warnings
+Your browser and Windows Defender will likely flag this application as unrecognized or potentially unsafe. **This is a false positive.**
+
+This happens because the application is new and is not code-signed (a costly process for small developers).
+
+If you are doubtful of the application, you can compile the application yourself via the source code in the main repo directory:
+
+**Star-Wars-Galaxies-Steam-Integration/SWGSI/source-code/Star Wars Galaxies Steam Integration.cs**
+
+If you want to see the VirusTotal check, you can go to the link here:
+https://www.virustotal.com/gui/url/dd3f155d90685c3e24eae9a10bf4ec41980de24d1ebb9b39e6cdd23b664cddae?nocache=1
+
 ### Step 1: Installation
 1.  Go to the [Releases Page](https://github.com/JohnFromSteam/Star-Wars-Galaxies-Steam-Integration/releases) on the right side of this page.
 2.  Download the `SWGSI.zip` file from the latest release.
