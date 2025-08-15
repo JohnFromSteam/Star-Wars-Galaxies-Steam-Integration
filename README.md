@@ -1,12 +1,12 @@
 # Star Wars Galaxies Steam Integration
 
-Star Wars Galaxies Steam Integration is a silent wrapper application for private SWG servers. It is designed for seamless integration with Steam as a "Non-Steam Game," ensuring the Steam Overlay works correctly by attaching to the game client after starting the launcher.
+Star Wars Galaxies Steam Integration is a silent wrapper application for private SWG servers. It is designed for seamless integration with Steam as a "Non-Steam Game," ensuring the Steam Overlay works correctly by attaching to the game client after it starts your pathed SWG launcher and the SWG launcher closes (by itself when pressing 'Play' or by you manually closing it).
 
 This application is now configurable via a simple text file (`config.ini`), allowing it to work with virtually any SWG server launcher.
 
 # The Original Problem
 
-Adding SWG launchers directly to Steam can be unreliable. The Steam Overlay will usually attach to the launcher process, which closes after you click "Play," causing the overlay to disappear. This application solves that problem by managing the launch sequence, process monitoring for the configured SWG client name, then staying alive until the SWG client closes.
+Adding SWG launchers directly to Steam can be unreliable. The Steam Overlay will usually attach to your SWG launcher process, which usually closes after you click "Play", causing the overlay to disappear. This application solves that problem by managing the launch sequence, process monitoring for the configured SWG client name after the launcher closes, then staying alive until the SWG client finally closes.
 
 # How It Works
 
@@ -14,7 +14,7 @@ The application runs silently and apart from the command terminal that pops up t
 
 1.  **Reads Configuration:** It reads the `launcherPath` and `gameProcessName` from the `config.ini` file.
 2.  **Launches the Server Launcher:** It starts the launcher executable you specified.
-3.  **Waits for Launcher to Close:** The application waits patiently until you click "Play" and the launcher process closes itself (you may have to close the launcher manually if it doesn't do that automatically).
+3.  **Waits for Launcher to Close:** The application waits patiently until you click "Play" and the launcher process closes itself (you may have to close the launcher manually if it does nmt do that automatically).
 4.  **Finds the Game Client:** It immediately begins searching for the main game process as specified in the `config.ini` file (e.g., `SwgClient_r.exe`).
 5.  **Monitors the Game:** Once the game process is found, the wrapper attaches to it and waits. This is the crucial step that allows the Steam Overlay to work.
 6.  **Exits Automatically:** When you close the game, the wrapper detects this and automatically closes itself.
