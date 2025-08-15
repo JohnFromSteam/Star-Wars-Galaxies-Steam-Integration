@@ -1,35 +1,71 @@
 # Star Wars Galaxies Steam Integration
-Star Wars Galaxies Steam Integration is a simple wrapper application written in C# that automates the launch process for private SWG servers. It is designed to allow for seamless integration with Steam as a "Non-Steam Game," ensuring the Steam Overlay works correctly.
 
-This has been tested and is confirmed to currently only work with the Star Wars Galaxies Restoration server, specifically the x64 version that is enabled in the user settings of the launcher.
+Star Wars Galaxies Steam Integration is a silent wrapper application for private SWG servers. It is designed for seamless integration with Steam as a "Non-Steam Game," ensuring the Steam Overlay works correctly by attaching to the game client after starting the launcher.
 
-# The Problem
-Adding SWG launchers directly to Steam can be unreliable. Often, the Steam Overlay will attach to the launcher instead of the actual game client, or it won't work at all. This application solves that problem by managing the launch sequence.
+This application is now configurable via a simple text file (`config.ini`), allowing it to work with virtually any SWG server launcher.
 
-# How It Works By Default (Star Wars Galaxies Restoration Only)
-The application performs the following steps automatically:
+# The Original Problem
 
-Launches the Server Launcher: It starts Star Wars Galaxies Restoration's launcher (SWG Restoration.exe).
+Adding SWG launchers directly to Steam can be unreliable. The Steam Overlay will usually attach to the launcher process, which closes after you click "Play," causing the overlay to disappear. This application solves that problem by managing the launch sequence, process monitoring for the configured SWG client name, then staying alive until the SWG client closes.
 
-Waits: It pauses for 10 seconds. This gives the launcher time to check for updates and perform any necessary authentication (including auto-login).
+# How It Works
 
-Closes the Launcher: It terminates the launcher process to free up resources.
+The application runs silently and apart from the command terminal that pops up that indicates that it is running, it does all of the logic in the background to provide a seamless experience. It performs the following steps:
 
-Launches the Game Client: It starts the main game client (SwgClient_r.exe) directly.
+1.  **Reads Configuration:** It reads the `launcherPath` and `gameProcessName` from the `config.ini` file.
+2.  **Launches the Server Launcher:** It starts the launcher executable you specified.
+3.  **Waits for Launcher to Close:** The application waits patiently until you click "Play" and the launcher process closes itself (you may have to close the launcher manually if it doesn't do that automatically).
+4.  **Finds the Game Client:** It immediately begins searching for the main game process as specified in the `config.ini` file (e.g., `SwgClient_r.exe`).
+5.  **Monitors the Game:** Once the game process is found, the wrapper attaches to it and waits. This is the crucial step that allows the Steam Overlay to work.
+6.  **Exits Automatically:** When you close the game, the wrapper detects this and automatically closes itself.
 
-Waits for Exit: The wrapper runs silently in the background until you close the game, which allows Steam to accurately track your playtime.
+# How to Use
 
-# How to Manually Modify & Use For Your Star Wars Galaxies Server
-Edit the File Paths: Open the .cs file in a text editor and change the launcherPath and gamePath variables to match the locations on your computer.
+### Step 1: Installation
+Place `Star Wars Galaxies Steam Integration.exe` and `config.ini` together in their own folder. This can be anywhere on your computer (e.g., inside your game folder or on your desktop).
 
-Compile the Application: Use the .NET Visual Studio SDK installed (you can download this seperately instead of downloading Visual Studio) to compile the code into an .exe file. 
-Further Explanation to Compile: Move the modified .cs file to your preferred folder and copy the URL path (e.g., D:\Games\SWG\SWG Restoration\x64), then open up PowerShell. Type `cd "YOURPATHHERE"`, replacing YOURPATHHERE with the full path of the modified .cs file, but still keeping the quotation marks. Then, you will need to type `csc Star-Wars-Galaxies-Steam-Integration.cs`, which will compile your modified .cs file. It will make a new `Star-Wars-Galaxies-Steam-Integration.exe` file to which you can place anywhere.
+### Step 2: Configuration
+Open the `config.ini` file with any text editor (like Notepad). You will need to provide two values:
 
-You may have to add the PATH variable to the System Variables if csc does not work in terminal or PowerShell.
+*   **`launcherPath`**: The full path to your server's launcher executable.
+*   **`gameProcessName`**: The process name of the main game client **without** the `.exe` extension. This is important.
 
-# Add to Steam:
-In Steam, go to Library -> Add a Game -> Add a Non-Steam Game...
+**Example for default installation for SWG Restoration:**
+```config.ini
+# Configuration for the SWG Launcher Steam Integration Application
 
-Browse to and select the compiled .exe file.
+# Below is the template on how to set up the configuration file. Replace the paths with the actual paths on your system and replace the main game process name if it is different than 'SwgClient_r'.
 
-You can now launch the game from your Steam library!
+# Path to the game launcher executable
+launcherPath=C:\Program Files (x86)\SWG Restoration\SWG Restoration.exe
+
+# The process name of the main game executable (excluding the .exe extension)
+gameProcessName=SwgClient_r
+```
+
+### Step 3: Add to Steam
+1.  In Steam, go to **Games (tip top tab in Steam) -> Add a Non-Steam Game to My Library...**
+2.  Click **Browse...** and navigate to the folder where you placed the application.
+3.  Select **`Star Wars Galaxies Steam Integration.exe`** and click **Add Selected Programs**.
+4.  (Optional) You can rename the entry in your Steam library to anything and even add custom artwork (should be an upcoming Steam feature).
+
+You can now launch the game from your Steam library and use the overlay!
+
+# Troubleshooting
+
+### "The launcher never appears!"
+
+This is the most common issue and is almost always caused by a permissions problem with your game's installation folder.
+
+1.  **Check the Log File:** In the same folder as the application, a file named **`launcher_log.txt`** will be created. Open it to see the exact error message. An error like "The launcher process exited immediately" is a clear sign of a permissions issue.
+
+2.  **The Solution (Recommended):** The error is caused by installing the game in a protected Windows folder (like `C:\Program Files` or `D:\Program Files`). To fix this permanently:
+    *   Move your entire game installation folder (e.g., `SWG Restoration`) to a simple, non-protected path like **`C:\Games\`** or **`D:\MyGames\`**.
+    *   After moving the folder, you **MUST** update the `launcherPath` in your `config.ini` file to point to the new location.
+    *   This will solve the issue and allow the application to launch the game without needing administrator privileges.
+
+3.  **The Other Solution (Not Recommended):** To fix this permanently via granting admin to `Star Wars Galaxies Steam Integration.exe`:
+    *   Right-click `Star Wars Galaxies Steam Integration.exe` and select **Properties**.
+    *   Go to the **Compatibility** tab and select **Run this program as an administrator**
+    *   Press **Apply**, then **OK**.
+    *   Launch the `Star Wars Galaxies Steam Integration.exe` to make sure this changed worked. You should receive a pop-up to allow admin access.
