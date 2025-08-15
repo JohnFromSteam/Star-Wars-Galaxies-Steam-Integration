@@ -129,4 +129,6 @@ This is the most common issue and is almost always caused by a permissions probl
     *   Launch the `Star Wars Galaxies Steam Integration.exe` to make sure this changed worked. You should receive a pop-up to allow admin access.
 
 # Further Issues
-If you have any further issues, let's try to figure it out together! Go to the **[Issues](https://github.com/JohnFromSteam/Star-Wars-Galaxies-Steam-Integration/issues)** section and fill out a report.
+If you have any further issues, let's try to figure it out together!
+
+Go to the **[Issues](https://github.com/JohnFromSteam/Star-Wars-Galaxies-Steam-Integration/issues)** section and fill out a report.
