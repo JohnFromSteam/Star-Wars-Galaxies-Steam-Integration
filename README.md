@@ -25,8 +25,9 @@ The application runs silently and apart from the command terminal that pops up t
 1.  Go to the [Releases Page](https://github.com/JohnFromSteam/Star-Wars-Galaxies-Steam-Integration/releases) on the right side of this page.
 2.  Download the `SWGSI.zip` file from the latest release.
 3.  Your browser may flag the download as unsafe because it is a new application. **This is a false positive.**
-    *   **On Chrome:** Click the three dots (...) next to the blocked download, then click **Keep**, and then **Keep anyway**.
-    *   **On Windows:** When you first run the `.exe`, Windows Defender SmartScreen will likely pop up. Click **"More info"** and then **"Run anyway."**
+    *   In Older Chrome Versions/Other Browsers: Go to the Downloads page and keep the file.
+    *   In Windows Part I: Given that Windows Defender catches it first, open the Start menu and type *Virus, to pull up Virus & Threat Protection
+    *   In Windows Part II: Click on Protection history and select the last Threat blocked. Click on Actions at the bottom right and recover the file.
 4.  Extract all the files from the `.zip` into their own folder.
 5.  Follow the configuration steps below.
 
@@ -53,7 +54,8 @@ gameProcessName=SwgClient_r
 1.  In Steam, go to **Games (tip top tab in Steam) -> Add a Non-Steam Game to My Library...**
 2.  Click **Browse...** and navigate to the folder where you placed the application.
 3.  Select **`Star Wars Galaxies Steam Integration.exe`** and click **Add Selected Programs**.
-4.  (Optional) You can rename the entry in your Steam library to anything and even add custom artwork (should be an upcoming Steam feature).
+4.  When you run the added gamew, you may need to click "More info" and then "Run anyway" since it is a new application and also unsigned.
+5.  (Optional) You can rename the entry in your Steam library to anything and even add custom artwork (should be an upcoming Steam feature).
 
 You can now launch the game from your Steam library and use the overlay!
 
