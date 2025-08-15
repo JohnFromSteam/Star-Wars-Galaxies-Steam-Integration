@@ -1,6 +1,6 @@
 # Star Wars Galaxies Steam Integration
 
-Star Wars Galaxies Steam Integration is a silent wrapper application for private SWG servers. It is designed for seamless integration with Steam as a "Non-Steam Game," ensuring the Steam Overlay works correctly by attaching to the game client after it starts your pathed SWG launcher and the SWG launcher closes (by itself when pressing 'Play' or by you manually closing it).
+Star Wars Galaxies Steam Integration is a silent wrapper application for private SWG servers. It is designed for seamless integration with Steam as a "Non-Steam Game", ensuring the Steam Overlay works correctly by attaching to the game client after it starts your pathed SWG launcher and the SWG launcher closes (by itself when pressing 'Play' or by you manually closing it).
 
 This application is now configurable via a simple text file (`config.ini`), allowing it to work with virtually any SWG server launcher.
 
