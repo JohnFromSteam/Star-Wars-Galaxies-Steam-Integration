@@ -61,8 +61,8 @@ https://www.virustotal.com/gui/file/3c0bf772b95c93363a0a14e5df78e4ec408c90f04cb7
 2.  Download the `SWGSI.zip` file from the latest release.
 3.  Your browser may flag the download as unsafe because it is a new application. **This is a false positive.**
     *   In Older Chrome Versions/Other Browsers: Go to the Downloads page and keep the file.
-    *   In Windows Part I: Given that Windows Defender catches it first, open the Start menu and type **Virus** then press enter to launch **Virus & Threat Protection**
-    *   In Windows Part II: Click on **Protection history** and select the last **Threat blocked**. Click on **Actions** at the bottom right and recover the file. It should now be in the download location for your browser (default is `C:\Users\%USERPROFILE%\Downloads`)
+    *   In Windows Part I: Given that Windows Defender catches it first, open the Start menu and type **Virus** then press enter to launch **Virus & Threat Protection**.
+    *   In Windows Part II: Click on **Protection history** and select the last **Threat blocked**. Click on **Actions** at the bottom right and recover the file. It should now be in the download location for your browser (default is `C:\Users\%USERPROFILE%\Downloads`).
 4.  Extract all the files from the `.zip` into their own folder.
 5.  Follow the configuration steps below.
 
@@ -99,7 +99,9 @@ The source code is provided in:
 
 **Star-Wars-Galaxies-Steam-Integration/SWGSI/source-code/Star Wars Galaxies Steam Integration.cs**
 
-I am in university and my language focus is Java, with Python/SQL/Front-End/Angular/Spring knowledge. Given that this is my first C# program, I do believe it could have been more efficient and have more logging/info to the terminal when it is running.
+My language focus is Java, with Python/SQL/Front-End/Angular/Spring knowledge.
+
+Given that this is my first C# program, I do believe it could have been more efficient and have more logging/info to the terminal when it is running.
 
 Aside from that, it does its job pretty well.
 
