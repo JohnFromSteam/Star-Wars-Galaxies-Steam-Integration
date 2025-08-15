@@ -95,9 +95,13 @@ gameProcessName=SwgClient_r
 You can now launch the game from your Steam library and use the overlay!
 
 # Source Code
-The source code is provided in **Star-Wars-Galaxies-Steam-Integration/SWGSI/source-code/Star Wars Galaxies Steam Integration.cs**.
+The source code is provided in:
 
-I am in university and my language focus is Java, with Python/SQL/Front-End/Angular/Spring knowledge. Given that this is my first C# program, I do believe it could have been more efficient and have more logging. Aside from that, it does its job.
+**Star-Wars-Galaxies-Steam-Integration/SWGSI/source-code/Star Wars Galaxies Steam Integration.cs**
+
+I am in university and my language focus is Java, with Python/SQL/Front-End/Angular/Spring knowledge. Given that this is my first C# program, I do believe it could have been more efficient and have more logging/info to the terminal when it is running.
+
+Aside from that, it does its job pretty well.
 
 Thank you!
 
