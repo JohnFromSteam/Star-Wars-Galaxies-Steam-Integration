@@ -67,7 +67,7 @@ https://www.virustotal.com/gui/file/3c0bf772b95c93363a0a14e5df78e4ec408c90f04cb7
 5.  Follow the configuration steps below.
 
 ### Step 2: Configuration
-Open the `config.ini` file with any text editor (like Notepad). You will need to provide two values:
+Open the `config.ini` file with any text editor. You will need to provide two values:
 
 *   **`launcherPath`**: The full path to your server's launcher executable.
 *   **`gameProcessName`**: The process name of the main game client **without** the `.exe` extension. This is important.
