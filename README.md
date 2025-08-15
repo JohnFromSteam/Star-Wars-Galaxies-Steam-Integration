@@ -13,7 +13,7 @@ Adding SWG launchers directly to Steam can be unreliable. The Steam Overlay will
 The application runs silently and apart from the command terminal that pops up that indicates that it is running, it does all of the logic in the background to provide a seamless experience. It performs the following steps:
 
 1.  **Reads Configuration:** It reads the `launcherPath` and `gameProcessName` from the `config.ini` file.
-2.  **Launches the Server Launcher:** It starts the launcher executable you specified.
+2.  **Launches the Server Launcher:** It starts the launcher executable as specified in the `config.ini` file (e.g., `D:\Games\SWG\SWG Restoration\SWG Restoration.exe`).
 3.  **Waits for Launcher to Close:** The application waits patiently until you click "Play" and the launcher process closes itself (you may have to close the launcher manually if it does not do that automatically).
 4.  **Finds the Game Client:** It immediately begins searching for the main game process as specified in the `config.ini` file (e.g., `SwgClient_r.exe`). It searches for the client each second, for 15 seconds. If it is not found after 15 seconds, the application closes.
 5.  **Game is Found:** Once the game process is found, the wrapper stays alive.
