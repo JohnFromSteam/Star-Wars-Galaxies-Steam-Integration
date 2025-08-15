@@ -115,6 +115,7 @@ This is the most common issue and is almost always caused by a permissions probl
 
 2.  **The Solution (Recommended):** The error is caused by installing the game in a protected Windows folder (like `C:\Program Files` or `D:\Program Files`). To fix this permanently:
     *   Move your entire game installation folder (e.g., `SWG Restoration`) to a simple, non-protected path like **`C:\Games\`** or **`D:\MyGames\`**.
+    *   Boot the SWG launcher to make sure things did not break. Your SWG launcher _may_ have issues detecting the files when you boot the launcher, as it may be searching for the original install path when you first installed it. If you have cannot change the install path inside your launcher, backup the **.tre** files from your game's directory as well as your **profiles** folder to somewhere else (that folder holds the settings for your character(s), uninstall the game via your launcher's uninstaller .exe, then place the backup'd files back into the game's folder and reinstall.
     *   After moving the folder, you **MUST** update the `launcherPath` in your `config.ini` file to point to the new location.
     *   This will solve the issue and allow the application to launch the game without needing administrator privileges.
 
