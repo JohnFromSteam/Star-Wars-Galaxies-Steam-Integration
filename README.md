@@ -33,16 +33,27 @@ If you are doubtful of the application, you can compile the application yourself
 If you want to see the VirusTotal checks for the URL and all the files, you can go to the links here:
 
 **GitHub ZIP URL**:
+
 https://www.virustotal.com/gui/url/dd3f155d90685c3e24eae9a10bf4ec41980de24d1ebb9b39e6cdd23b664cddae/detection
+
 **config.ini**:
+
 https://www.virustotal.com/gui/file/b5163d11f3be8921aa0e21386203fd20f751cfb22238113439ed660555a5848f/detection
+
 **Star Wars Galaxies Steam Integration.deps.json**:
+
 https://www.virustotal.com/gui/file/c63e72068a8462bc82b130ecb0de68075c5cf88fd4a98894db35be0968f87fe2/detection
+
 **Star Wars Galaxies Steam Integration.dll**:
+
 https://www.virustotal.com/gui/file/1fb73a8c0208f97508c8fb9741e74ecb330820b407435776f064c1507f57f06e/detection
+
 **Star Wars Galaxies Steam Integration.exe**:
+
 https://www.virustotal.com/gui/file/0c7bbcdcdadc933ebbae1459de4d07e93cb548568943631099dfb03b440e5c71/detection
+
 **Star Wars Galaxies Steam Integration.runtimeconfig.json**:
+
 https://www.virustotal.com/gui/file/3c0bf772b95c93363a0a14e5df78e4ec408c90f04cb7103205af97b2d276fab0/detection
 
 ### Step 1: Installation
