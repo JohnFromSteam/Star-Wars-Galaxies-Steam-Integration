@@ -22,10 +22,13 @@ The application runs silently and apart from the command terminal that pops up t
 # How to Use
 
 ### Step 1: Installation
-1.   Click the green **Code** button near the top of this page.
-2.   Click **Download ZIP**.
-3.   Open up the downloaded zip file with your favorite zip opener (Windows 11 has this functionality built-in).
-4.   Place `Star Wars Galaxies Steam Integration.exe` and `config.ini` together in their own folder. This can be anywhere on your computer (e.g., inside your game folder or on your desktop).
+1.  Go to the [Releases Page](https://github.com/JohnFromSteam/Star-Wars-Galaxies-Steam-Integration/releases) on the right side of this page.
+2.  Download the `SWGSI.zip` file from the latest release.
+3.  Your browser may flag the download as unsafe because it is a new application. **This is a false positive.**
+    *   **On Chrome:** Click the three dots (...) next to the blocked download, then click **Keep**, and then **Keep anyway**.
+    *   **On Windows:** When you first run the `.exe`, Windows Defender SmartScreen will likely pop up. Click **"More info"** and then **"Run anyway."**
+4.  Extract all the files from the `.zip` into their own folder.
+5.  Follow the configuration steps below.
 
 ### Step 2: Configuration
 Open the `config.ini` file with any text editor (like Notepad). You will need to provide two values:
