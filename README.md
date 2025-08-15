@@ -19,7 +19,7 @@ The application runs silently and apart from the command terminal that pops up t
 5.  **Game is Found:** Once the game process is found, the wrapper stays alive.
 6.  **Exits Automatically:** When you close the game, the wrapper detects this and automatically closes itself.
 
-# How to Use
+# How to Install and Use
 
 ### Step 1: Installation
 1.  Go to the [Releases Page](https://github.com/JohnFromSteam/Star-Wars-Galaxies-Steam-Integration/releases) on the right side of this page.
