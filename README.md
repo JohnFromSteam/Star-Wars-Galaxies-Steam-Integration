@@ -113,7 +113,7 @@ This is the most common issue and is almost always caused by a permissions probl
 
 1.  **Check the Log File:** In the same folder as the application, a file named **`launcher_log.txt`** will be created. Open it to see the exact error message. An error like "The launcher process exited immediately" is a clear sign of a permissions issue.
 
-2.  **The Solution (Recommended):** The error is caused by installing the game in a protected Windows folder (like `C:\Program Files` or `D:\Program Files`). To fix this permanently:
+2.  **The Solution (Recommended):** The error is caused by installing the game in a protected Windows folder (like `C:\Program Files`). To fix this permanently:
     *   Move your entire game installation folder (e.g., `SWG Restoration`) to a simple, non-protected path like **`C:\Games\`** or **`D:\MyGames\`**.
     *   Boot your SWG launcher to make sure things did not break. If it is starting to download files again:
          *    Your SWG launcher is having issues detecting the files, as it is searching for the original install path from when you first installed it.
