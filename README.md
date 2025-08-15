@@ -72,14 +72,14 @@ Open the `config.ini` file with any text editor (like Notepad). You will need to
 *   **`launcherPath`**: The full path to your server's launcher executable.
 *   **`gameProcessName`**: The process name of the main game client **without** the `.exe` extension. This is important.
 
-**Example for default installation for SWG Restoration:**
+**Example of my config for my installation of SWG Restoration:**
 ```config.ini
 # Configuration for the SWG Launcher Steam Integration Application
 
 # Below is the template on how to set up the configuration file. Replace the paths with the actual paths on your system and replace the main game process name if it is different than 'SwgClient_r'.
 
 # Path to the game launcher executable
-launcherPath=C:\Program Files (x86)\SWG Restoration\SWG Restoration.exe
+launcherPath=D:\Games\SWG\SWG Restoration\SWG Restoration.exe
 
 # The process name of the main game executable (excluding the .exe extension)
 gameProcessName=SwgClient_r
