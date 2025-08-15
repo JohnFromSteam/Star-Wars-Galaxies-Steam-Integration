@@ -90,7 +90,7 @@ gameProcessName=SwgClient_r
 2.  Click **Browse...** and navigate to the folder where you placed the application.
 3.  Select **`Star Wars Galaxies Steam Integration.exe`** and click **Add Selected Programs**.
 4.  When you run the newly added program on Steam, you may need to click "More info" and then "Run anyway" since it is a new application and also unsigned. You should only need to do this once, thankfully.
-5.  (Optional) You can rename the entry in your Steam library to anything and even add custom artwork (should be an upcoming Steam feature).
+5.  (Optional) You can rename the entry in your Steam library to anything (and an upcoming feature to Steam is that you can add custom artwork!).
 
 You can now launch the game from your Steam library and use the overlay!
 
